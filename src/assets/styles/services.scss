@@ -1,0 +1,129 @@
+.isActive {
+  border: 1px solid red;
+}
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 0 0.25em 0 0 black, 0 0.5em 0 0 black;
+}
+
+/* NAVBAR */
+
+.header-btn {
+  background: #4abf3a;
+  border-radius: 2px;
+  padding: 12px 16px;
+  border: none;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.main-nav {
+  display: none;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav li {
+  margin: 20px 0;
+}
+
+.active {
+  display: block;
+}
+
+.navbar-toggle {
+  position: absolute;
+  margin: 33px 0;
+  right: -16px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+.logo {
+  margin: 33px 0;
+}
+
+/* CARDS  */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+/* MAIN  */
+
+.main-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.main-title-link {
+  color: #0000;
+}
+
+/* MAIN */
+
+.main-title-link {
+  display: none;
+}
+.main-text {
+  margin-top: 40px;
+}
+.header-btn {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .nav-links {
+    padding-left: 20px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+}

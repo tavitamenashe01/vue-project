@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic,cyrillic-ext");
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+.card-title-img {
+  display: flex;
+  align-items: center;
+}
+
+/* Flexbox stuff */
+.card {
+  flex: 1 0 23%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 28px 24px;
+  margin: 24px 0;
+}
+
+.card-icon-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-content {
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: clip;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.card-icon-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-title {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.card-link-more {
+  color: #ccc !important;
+}
+.card-content {
+  margin-top: 20px;
+}
+.card-content-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 40em) {
+  .card {
+    max-width: calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .card {
+    max-width: calc(25% - 1em);
+  }
+}

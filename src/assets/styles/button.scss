@@ -1,0 +1,14 @@
+@mixin my-button($background, $font-size) {
+  font-weight: 500;
+  color: $white;
+  padding: 12px 16px;
+  border-radius: 2px;
+  border: none;
+  text-transform: uppercase;
+  background-color: $background;
+}
+
+
+.button {
+  @include my-button($green, 12px);
+}

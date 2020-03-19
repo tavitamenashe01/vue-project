@@ -1,0 +1,48 @@
+@import "var";
+@import "mainPage";
+@import "button";
+@import "serviceCard";
+@import "services";
+@import "card";
+@import "modal";
+
+
+$font-family: "Montserrat", sans-serif;
+$font-size: 16px;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}
+
+li {
+  list-style: none;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
